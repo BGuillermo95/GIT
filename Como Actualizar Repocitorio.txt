@@ -1,0 +1,6 @@
+1 - git status : sirve para ver el estado del repositorio y si hubo algun cambio.
+2 - git add : Sirve para agregar algun archivo al repositorio o actualizar el existente con los nuevos datos adquiridos.
+3 - git commit -M "": Con esto comentamos que hicimos un nuevo cambio a nuestro repositorio , de esa manera los otros programadores pueden saber que hiciste en cambio.
+4 - git remote add origin (Aca ponemos el URL del repositorio) : Esto nos sirve para decirle al sistema donde se hacen los cambios.
+5 - git branch -M main : Sirve para crear una rama e indicar en que rama queremos guardar los cambios del repositorio.
+6 - git push -u origin main : esto sirve para poder enviar todos los cambios a nuestro repositorio en GIT. puse branch porque espesifique la rama a la que se hicieron los cambios.

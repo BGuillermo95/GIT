@@ -1,0 +1,10 @@
+Consultar cuantas ramas existen:
+- git branch.
+Cambiar de rama :
+- git checkout + nombre de la rama. 
+Crear una rama: 
+- git checkout -b + nombre de la rama nueva // git push --set-upstream origin + NombreDeRama.
+Cambiar nombre de la rama:
+- git brach -m + NombreViejo + NombreNuevo.
+Eliminar rama:
+- git branch -d + NombredelaRama // git push origin --delete + NombreDeLaRama.

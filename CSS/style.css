@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+header{
+    position: fixed;
+    background-color: rgba(250, 0, 255, 0.53);
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+div.logoPrincipal{
+    display: inline-flex;
+    align-items: center;
+
+    
+}
+
+ div.logoPrincipal h1{
+    color:blue;
+    font-size: 1em;
+    margin: 0 10%;
+    padding: 3%;
+    border: 10px outset rgb(255, 23, 255);
+    outline: 5px solid rgb(236, 216, 35);
+    box-shadow: 0 0 0 5px rgb(16, 175, 238);
+
+
+ }
+nav.secciones{
+    display: flex;
+    align-items: center;
+   
+
+}
+nav.secciones a{
+    margin: 12px;
+    font-size: 20px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+
+}
+nav.secciones a.turnos{
+    font-weight: bold;
+    padding: 3px;
+    font-size: 15px;
+    border: 8px outset rgb(255, 23, 255);
+    outline: 5px solid rgb(236, 216, 35);
+    box-shadow: 0 0 0 5px rgb(16, 175, 238);  
+}
+
+nav.secciones a:hover{
+    color:rgba(230, 12, 230, 0.726);
+}
+
+
+div.redes{
+    align-items: center;
+    display: inline-flex;
+}
+
+div.redes a{
+    margin:0 2%;
+}
+
+
+
+
+
+ @media(max-width:750px){
+        header{
+            flex-direction: column;
+            position: fixed;
+        }
+        div.logoPrincipal{
+            margin: 0 25%;
+        }
+         nav.secciones{
+            align-items: center;
+            margin: 0 5%;
+         }
+         div.redes{
+            margin: 0 30%;
+         }
+    
+    
+    
+    }
+    

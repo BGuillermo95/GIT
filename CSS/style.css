@@ -7,15 +7,15 @@
 }
 
 body{
-    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.836);
 }
 
 header{
-    position: fixed;
-    background-color: rgba(250, 0, 255, 0.53);
+    background-color: rgb(255, 255, 255);
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+
 }
 
 div.logoPrincipal{
@@ -26,16 +26,16 @@ div.logoPrincipal{
 }
 
  div.logoPrincipal h1{
-    color:blue;
+    font-weight:bold;
+    color:rgb(150, 1, 142);
     font-size: 1em;
-    margin: 0 10%;
-    padding: 3%;
-    border: 10px outset rgb(255, 23, 255);
+    margin: 0 15%;
+    padding: 1%;
+    border: 6px outset rgb(255, 23, 255);
     outline: 5px solid rgb(236, 216, 35);
-    box-shadow: 0 0 0 5px rgb(16, 175, 238);
-
-
+   
  }
+
 nav.secciones{
     display: flex;
     align-items: center;
@@ -43,11 +43,12 @@ nav.secciones{
 
 }
 nav.secciones a{
-    margin: 12px;
+    margin: 15px;
     font-size: 20px;
     display: flex;
     text-decoration: none;
     align-items: center;
+    text-shadow: 0.5px 0.5px 0.5px black;
 
 }
 nav.secciones a.turnos{
@@ -61,7 +62,9 @@ nav.secciones a.turnos{
 
 nav.secciones a:hover{
     color:rgba(230, 12, 230, 0.726);
-}
+    box-shadow: 0px 6px 5px 0px rgb(233, 38, 233);
+   }
+
 
 
 div.redes{
@@ -70,7 +73,7 @@ div.redes{
 }
 
 div.redes a{
-    margin:0 2%;
+    margin:0 5%;
 }
 
 

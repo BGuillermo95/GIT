@@ -1,83 +1,186 @@
 *{
 	margin: 0;
 	padding:0;
-	box-sizing:border-box;
-    font-family: 'Open Sans', sans-serif;
-    
+	box-sizing:border-box;    
+    font-family: 'Spinnaker', sans-serif;
 }
 
 body{
     background-color: rgba(255, 255, 255, 0.836);
+    padding-top: 2.6% ;
 }
-
+    /* ----->  HEADER <----- */
 header{
-    background-color: rgb(255, 255, 255);
+    position:fixed;
+    top: 0;
+    left: 0;
+    padding: 1.1%;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    box-shadow: 30px 0px 5px 3.5px rgba(209, 1, 122, 0.842);
+
 
 }
+    /*----> TITULO - LOGO <----*/
+header .header-a{ 
+    font-family: 'Michroma', sans-serif;
+    font-weight:bold;
+    text-decoration: none;
+    color:rgb(150, 1, 142);
+    font-size: 2.4em;
+}
+header .header-b{
+    font-family: 'Michroma', sans-serif;
+    font-weight:bold;
+    text-decoration: none;
+    color:rgb(150, 1, 142);
+    font-size: .9em;
+    margin: 0 7%;
+ }
 
-div.logoPrincipal{
+/* div.logoPrincipal{
     display: inline-flex;
     align-items: center;
-
-    
 }
-
- div.logoPrincipal h1{
-    font-weight:bold;
-    color:rgb(150, 1, 142);
-    font-size: 1em;
-    margin: 0 15%;
-    padding: 1%;
-    border: 6px outset rgb(255, 23, 255);
-    outline: 5px solid rgb(236, 216, 35);
-   
- }
+*/
 
 nav.secciones{
     display: flex;
     align-items: center;
-   
 
 }
 nav.secciones a{
-    margin: 15px;
-    font-size: 20px;
+    font-family: 'Spinnaker', sans-serif;
+    font-weight: bold;
+    margin: 1.5em;
+    font-size: 1.2em;
     display: flex;
     text-decoration: none;
     align-items: center;
-    text-shadow: 0.5px 0.5px 0.5px black;
+   
 
 }
 nav.secciones a.turnos{
     font-weight: bold;
-    padding: 3px;
-    font-size: 15px;
-    border: 8px outset rgb(255, 23, 255);
-    outline: 5px solid rgb(236, 216, 35);
-    box-shadow: 0 0 0 5px rgb(16, 175, 238);  
+    padding: .2em;
+    font-size: 1em;
+    border: 6px outset rgb(255, 23, 255);
+    outline: 4px solid rgb(236, 216, 35);
+    box-shadow: 0 0 0 3px rgb(16, 175, 238);  
 }
 
 nav.secciones a:hover{
-    color:rgba(230, 12, 230, 0.726);
-    box-shadow: 0px 6px 5px 0px rgb(233, 38, 233);
+   
+    box-shadow: 0px 5px 2px 0px rgba(175, 6, 139, 0.938);
+    
    }
 
-
-
-div.redes{
+/* div.redes{
     align-items: center;
     display: inline-flex;
 }
-
 div.redes a{
     margin:0 5%;
 }
+*/
+/*
+.homePrincipal h1{
+    color: rgb(17, 17, 17);
+    margin: 2em 1.5em;
+}
+*/
+
+/* CSS DE PAG.PRINCIPAL */
+article.portadaPrincipal{
+    font-family: 'Michroma', sans-serif;
+    background-image: url(../IMAGENES/logos/Manos/Uñaslove.jpg);
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size :100%;
+}
+
+article div.contenidoPrincipal{
+
+}
+
+article div.contenidoPrincipal h1{
+    color:rgb(255, 255, 255) ;
+    font-family: 'Michroma', sans-serif;
+    background-color: rgb(0, 0, 0);
+    margin: 7% 0%;
+    font-size: 1.9em;
+    box-shadow: 0px 10px 10px 0px black;
+}
+
+/*
+.contenidoPrincipal p{
+    color:rgb(5, 5, 5);
+    margin-bottom: 4%;
+    margin-right: 5px;
+    font-size: .9em;
+    padding: 10px 2px;
+    box-shadow: 0px 0px 0px 0px rgb(202, 3, 3);
+    box-sizing: content-box;
+    border: 2px solid red;
+}
+*/
+
+article div.contenidoPrincipal a{
+    opacity: 80%;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.637);
+    color:rgb(255, 0, 0); ;
+    margin-bottom: .5%;
+    font-size: 1em;
+    padding: 15px 15px;
+    border: 1px solid rgb(236, 16, 170);
+    display: inline-block;
+    margin-top: 50%;
+}
 
 
+/* CSS DEL CARRUCEL */
+.slider-frame{
+    width: 75%;
+    margin: 3% 5% 0;
+    overflow:visible;
+    animation:slide 18s infinite ease-in-out;
+}
+.slider-frame ul {
+    display: flex;
+    width: 400%;
+    align-items: center;
+}
+.slider-frame li{
+    list-style: none;
+    width: 50%;
+}
+.slider-frame img {
+    height: 10%;
+    width: 60%;
+}
 
+span{
+    font-size: 50px;
+    margin-right: 500px;
+}
+
+@keyframes slide {
+    3% {margin-left: 3%;}
+    20% {margin-left: 3%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -96%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -196%;}
+
+}
 
 
  @media(max-width:750px){

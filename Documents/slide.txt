@@ -1,0 +1,51 @@
+HTML: 
+	
+	<div class="slider-frame">
+    <ul>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        
+    </ul>
+</div>
+
+	
+
+
+
+CSS:
+
+/* CSS DEL CARRUCEL */
+
+.slider-frame{
+    width: 75%;
+    margin: 0 10% 0;
+    overflow:visible;
+
+    animation:slide 18s infinite ease-in-out;
+}
+.slider-frame ul {
+    display: flex;
+    width: 400%;
+    align-items: center;
+}
+.slider-frame li{
+    list-style: none;
+    width: 50%;
+    align-items:center;
+}
+.slider-frame img {
+    height: 10%;
+}
+
+@keyframes slide {
+    3% {margin-left: 3%;}
+    20% {margin-left: 3%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -96%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -196%;}
+
+}
